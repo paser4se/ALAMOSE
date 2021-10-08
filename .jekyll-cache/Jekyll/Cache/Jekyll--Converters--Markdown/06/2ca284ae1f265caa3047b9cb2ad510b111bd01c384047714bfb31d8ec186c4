@@ -1,0 +1,41 @@
+I"+<h2 class="no_toc" id="workshop-3-miniature-security-static-analysis-for-ansible-manifests">Workshop-3: Miniature Security Static Analysis for Ansible Manifests</h2>
+
+<p class="fs-6 fw-300">The purpose of this workshop is to provide a hands-on experience for Ansible security analysis.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#tasks" id="markdown-toc-tasks">Tasks</a></li>
+  <li><a href="#expected-output" id="markdown-toc-expected-output">Expected Output</a></li>
+</ol>
+
+<hr />
+
+<!-- View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example. -->
+
+<h2 id="tasks">Tasks</h2>
+
+<ol>
+  <li>Open up the <code class="language-plaintext highlighter-rouge">Workshop3.values.yaml</code> file to find out security weaknesses. To understand what security weakness you only need to look at Section 3.2 of this paper: https://arxiv.org/pdf/1907.07159.pdf</li>
+  <li>After determining what types of security weaknesses occur for what variables in <code class="language-plaintext highlighter-rouge">Workshop3.values.yaml</code>, inspect where the variables appear in <code class="language-plaintext highlighter-rouge">Workshop3.play1.yaml</code> and <code class="language-plaintext highlighter-rouge">Workshop3.play2.yaml</code>.</li>
+  <li>Write an automated program that can first find all security weaknesses in <code class="language-plaintext highlighter-rouge">Workshop3.values.yaml</code> , then also report which code elements in <code class="language-plaintext highlighter-rouge">Workshop3.play1.yaml</code> and <code class="language-plaintext highlighter-rouge">Workshop3.play2.yaml</code> use these security weaknesses. You program should report both variables for which security weaknesses appear, and variables in <code class="language-plaintext highlighter-rouge">Workshop3.play1.yaml</code> and <code class="language-plaintext highlighter-rouge">Workshop3.play2.yaml</code> that use these security weaknesses. Pythonistas can use <a href="https://pyyaml.org/wiki/PyYAMLDocumentation">PyYAML</a>. Non-Python users can use <a href="https://bitbucket.org/asomov/snakeyaml/src/master/">SnakeYAML</a> for parsing YAML files. Use your knowledge of def-chain relationships to understand what code elements use the security weaknesses in <code class="language-plaintext highlighter-rouge">Workshop3.values.yaml</code>. You will leverage the output of these parsing utilities to apply def chain analysis.</li>
+  <li>Once completed please fill out this survey: https://forms.office.com/r/17Bd18T2xs. This counts 5% of the total grade for the workshop.</li>
+</ol>
+
+<h2 id="expected-output">Expected Output</h2>
+
+<ol>
+  <li>A Markdown file that lists all security weaknesses in <code class="language-plaintext highlighter-rouge">Workshop3.values.yaml</code> file. 
+Output should look like this:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Security weakness name: AAA
+Security weakness location: Variable 'X' in line# '100'
+</code></pre></div>    </div>
+  </li>
+  <li>Source code files that can perform Step#3 automatically without syntax errors. Do not embed code into your Markdown files. The generated output should look like this:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Security weakness name: AAA
+Security weakness location: Variable 'X' in line# '100'
+Security weakness usage: Play name 'ABC' in `Workshop3.play1.yaml` 
+</code></pre></div>    </div>
+  </li>
+</ol>
+:ET
