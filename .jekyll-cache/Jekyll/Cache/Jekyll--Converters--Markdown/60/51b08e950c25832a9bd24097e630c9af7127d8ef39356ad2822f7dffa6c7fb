@@ -1,4 +1,4 @@
-I"‰<h1 class="fs-9" id="secure-software-engineering">Secure Software Engineering</h1>
+I"<h1 class="fs-9" id="secure-software-engineering">Secure Software Engineering</h1>
 
 <p class="fs-6 fw-300">Authentic Learning of Secure Software Engineering in DevOps with Hands-on Workshop</p>
 
@@ -11,8 +11,8 @@
 <h2 id="secure-software-engineering-hands-on-workshop-modules">Secure Software Engineering Hands-on Workshop Modules</h2>
 
 <ul>
-  <li><a href="/home/docs/workshop2/">Workshop-2: Forensics in Machine Learning Code</a></li>
-  <li><a href="/home/docs/workshop3/">Workshop-3: Miniature Security Static Analysis for Ansible Manifests</a></li>
+  <li><a href="/home/workshop2/">Workshop-2: Forensics in Machine Learning Code</a></li>
+  <li><a href="/home/workshop3/">Workshop-3: Miniature Security Static Analysis for Ansible Manifests</a></li>
 </ul>
 
 <!-- ### Dependencies

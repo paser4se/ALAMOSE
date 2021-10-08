@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Workshop3
-nav_order: 8
+nav_order: 3
 ---
 
 ## Workshop-3: Miniature Security Static Analysis for Ansible Manifests

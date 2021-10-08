@@ -16,7 +16,7 @@
 title: Secure DevOps
 description: Secure DevOps documentation
 baseurl: "/home" # the subpath of your site, e.g. /blog
-url: "https://paser4se.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://paser4se.github.io/securedevops" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
@@ -127,5 +127,5 @@ remote_theme: pmarsceill/just-the-docs
 markdown: kramdown
 encoding: UTF-8
 
-gems:
-- jekyll-seo-tag
+# gems:
+# - jekyll-seo-tag

@@ -566,67 +566,67 @@
     "doc": "Workshop2",
     "title": "Workshop-2: Forensics in Machine Learning Code",
     "content": "Pick Any One (Option-1 or Option-2). ",
-    "url": "http://localhost:4000/home/docs/workshop2/#workshop-2-forensics-in-machine-learning-code",
-    "relUrl": "/docs/workshop2/#workshop-2-forensics-in-machine-learning-code"
+    "url": "http://localhost:4000/home/workshop2/#workshop-2-forensics-in-machine-learning-code",
+    "relUrl": "/workshop2/#workshop-2-forensics-in-machine-learning-code"
   },"95": {
     "doc": "Workshop2",
     "title": "Table of contents",
     "content": ". | Pick Any One (Option-1 or Option-2) . | (Option-1) Tasks for Pythonistas | (Option-2) Tasks for Non-Python Users | . | Sample Input | Sample Output . | Expected Output for Pythonistas: | Expected Output for Non-Python Users: . | Ensure that your logging code (applies for both options) handles the following: | . | . | . ",
-    "url": "http://localhost:4000/home/docs/workshop2/#table-of-contents",
-    "relUrl": "/docs/workshop2/#table-of-contents"
+    "url": "http://localhost:4000/home/workshop2/#table-of-contents",
+    "relUrl": "/workshop2/#table-of-contents"
   },"96": {
     "doc": "Workshop2",
     "title": "Pick Any One  (Option-1 or Option-2)",
     "content": "(Option-1) Tasks for Pythonistas . Imagine this scenario: Dolly, a data science specialist at Tennessee Tech. University has written machine learning (ML) code in ML.py. The output is correct but she just learned about adverserial machine learning, which talks about how ML code can be attacked. She learned that ML models are susceptible to security issues: . | poisoning attacks that are introduced through passing in erroneous dataset files into ML code | model tricking that are results of models that are being attacked, which gives erroneous results. Incorrect prediction performance is an indicator of ML models being attacked. | . Use knowledge from the class on what things need to be logged and how. Assist Dolly by writing logging code in the correct locations in ML.py with comments so that the two above-mentioned issues are logged for all provided ML examples. After writing the code, put in comments to justify your code, save ML.py, and then push it to your repository. Then, use the Software Forensics Workshop on ILearn to input the link of your repository. You will find the Python logging utility useful. You don’t have to run the code. (Option-2) Tasks for Non-Python Users . See the attached Zip file. This is a simple Bluetooth Android application written in Java. You need to add logging code in app/src/main/java/com/mcuhq/simplebluetooth/ to assist the developer with forensics. Add Java-based logging code for all methods that you think are important to log in all Java files in app/src/main/java/com/mcuhq/simplebluetooth/. Use knowledge from the class on what things need to be logged and how. A few notes: . | No need to run code. | For logging you should use the Java Logging API | . After writing the code, put in comments to justify your code, save all modified Java files, and then push it to your repository. Then, use the Software Forensics Workshop on ILearn to input the link of your repository. Reff: Android Simple Bluetooth Example . ",
-    "url": "http://localhost:4000/home/docs/workshop2/#pick-any-one--option-1-or-option-2",
-    "relUrl": "/docs/workshop2/#pick-any-one--option-1-or-option-2"
+    "url": "http://localhost:4000/home/workshop2/#pick-any-one--option-1-or-option-2",
+    "relUrl": "/workshop2/#pick-any-one--option-1-or-option-2"
   },"97": {
     "doc": "Workshop2",
     "title": "Sample Input",
     "content": "ML.py for Pythonistas and app/src/main/java/com/mcuhq/simplebluetooth/ for non-Python users . ",
-    "url": "http://localhost:4000/home/docs/workshop2/#sample-input",
-    "relUrl": "/docs/workshop2/#sample-input"
+    "url": "http://localhost:4000/home/workshop2/#sample-input",
+    "relUrl": "/workshop2/#sample-input"
   },"98": {
     "doc": "Workshop2",
     "title": "Sample Output",
     "content": "Expected Output for Pythonistas: . Logging code with comments, e.g., ML.py will look like as follows. iris = datasets.load_iris() // initiated logging logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s') . Expected Output for Non-Python Users: . Logging code with comments, e.g., a Java file in app/src/main/java/com/mcuhq/simplebluetooth/ will look like this: . fileHandler.setFormatter(new MyFormatter()); //setting custom filter for FileHandler fileHandler.setFilter(new MyFilter()); logger.addHandler(fileHandler); . Do the same for all Java files that you think is necessary. Ensure that your logging code (applies for both options) handles the following: . | Timestamp | Name of output file will be WORKSHOP2.log | Logging level | . ",
-    "url": "http://localhost:4000/home/docs/workshop2/#sample-output",
-    "relUrl": "/docs/workshop2/#sample-output"
+    "url": "http://localhost:4000/home/workshop2/#sample-output",
+    "relUrl": "/workshop2/#sample-output"
   },"99": {
     "doc": "Workshop2",
     "title": "Workshop2",
     "content": " ",
-    "url": "http://localhost:4000/home/docs/workshop2/",
-    "relUrl": "/docs/workshop2/"
+    "url": "http://localhost:4000/home/workshop2/",
+    "relUrl": "/workshop2/"
   },"100": {
     "doc": "Workshop3",
     "title": "Workshop-3: Miniature Security Static Analysis for Ansible Manifests",
     "content": "The purpose of this workshop is to provide a hands-on experience for Ansible security analysis. ",
-    "url": "http://localhost:4000/home/docs/workshop3/#workshop-3-miniature-security-static-analysis-for-ansible-manifests",
-    "relUrl": "/docs/workshop3/#workshop-3-miniature-security-static-analysis-for-ansible-manifests"
+    "url": "http://localhost:4000/home/workshop3/#workshop-3-miniature-security-static-analysis-for-ansible-manifests",
+    "relUrl": "/workshop3/#workshop-3-miniature-security-static-analysis-for-ansible-manifests"
   },"101": {
     "doc": "Workshop3",
     "title": "Table of contents",
     "content": ". | Tasks | Expected Output | . ",
-    "url": "http://localhost:4000/home/docs/workshop3/#table-of-contents",
-    "relUrl": "/docs/workshop3/#table-of-contents"
+    "url": "http://localhost:4000/home/workshop3/#table-of-contents",
+    "relUrl": "/workshop3/#table-of-contents"
   },"102": {
     "doc": "Workshop3",
     "title": "Tasks",
     "content": ". | Open up the Workshop3.values.yaml file to find out security weaknesses. To understand what security weakness you only need to look at Section 3.2 of this paper: https://arxiv.org/pdf/1907.07159.pdf | After determining what types of security weaknesses occur for what variables in Workshop3.values.yaml, inspect where the variables appear in Workshop3.play1.yaml and Workshop3.play2.yaml. | Write an automated program that can first find all security weaknesses in Workshop3.values.yaml , then also report which code elements in Workshop3.play1.yaml and Workshop3.play2.yaml use these security weaknesses. You program should report both variables for which security weaknesses appear, and variables in Workshop3.play1.yaml and Workshop3.play2.yaml that use these security weaknesses. Pythonistas can use PyYAML. Non-Python users can use SnakeYAML for parsing YAML files. Use your knowledge of def-chain relationships to understand what code elements use the security weaknesses in Workshop3.values.yaml. You will leverage the output of these parsing utilities to apply def chain analysis. | Once completed please fill out this survey: https://forms.office.com/r/17Bd18T2xs. This counts 5% of the total grade for the workshop. | . ",
-    "url": "http://localhost:4000/home/docs/workshop3/#tasks",
-    "relUrl": "/docs/workshop3/#tasks"
+    "url": "http://localhost:4000/home/workshop3/#tasks",
+    "relUrl": "/workshop3/#tasks"
   },"103": {
     "doc": "Workshop3",
     "title": "Expected Output",
     "content": ". | A Markdown file that lists all security weaknesses in Workshop3.values.yaml file. Output should look like this: Security weakness name: AAA Security weakness location: Variable 'X' in line# '100' . | Source code files that can perform Step#3 automatically without syntax errors. Do not embed code into your Markdown files. The generated output should look like this: Security weakness name: AAA Security weakness location: Variable 'X' in line# '100' Security weakness usage: Play name 'ABC' in `Workshop3.play1.yaml` . | . ",
-    "url": "http://localhost:4000/home/docs/workshop3/#expected-output",
-    "relUrl": "/docs/workshop3/#expected-output"
+    "url": "http://localhost:4000/home/workshop3/#expected-output",
+    "relUrl": "/workshop3/#expected-output"
   },"104": {
     "doc": "Workshop3",
     "title": "Workshop3",
     "content": " ",
-    "url": "http://localhost:4000/home/docs/workshop3/",
-    "relUrl": "/docs/workshop3/"
+    "url": "http://localhost:4000/home/workshop3/",
+    "relUrl": "/workshop3/"
   }
 }

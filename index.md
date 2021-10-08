@@ -20,8 +20,8 @@ Authentic Learning of Secure Software Engineering in DevOps with Hands-on Worksh
 
 ## Secure Software Engineering Hands-on Workshop Modules
 
-- [Workshop-2: Forensics in Machine Learning Code]({% link docs/workshop2.md %})
-- [Workshop-3: Miniature Security Static Analysis for Ansible Manifests]({% link docs/workshop3.md %})
+- [Workshop-2: Forensics in Machine Learning Code]({% link workshop2.md %})
+- [Workshop-3: Miniature Security Static Analysis for Ansible Manifests]({% link workshop3.md %})
 
 
 <!-- ### Dependencies
