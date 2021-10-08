@@ -1,2 +1,2 @@
-# securedevops.github.io
+# securedevops
 Authentic Learning for Secure DevOps 
