@@ -1,16 +1,12 @@
----
-layout: default
-title: ALAMOSE
-description: Authentic Learning-based Modules for DevOps Security Education.  
----
-
-ALAMOSE aims to educate undergraduate and graduate students on (i) what categories of security weaknesses
-appear for artifacts used in DevOps, and (ii) how identified security weaknesses can be detected. 
+I"˜<p>ALAMOSE aims to educate undergraduate and graduate students on (i) what categories of security weaknesses
+appear for artifacts used in DevOps, and (ii) how identified security weaknesses can be detected.</p>
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
-- [Workshop-2: Forensics in Machine Learning Code](./workshop2.html).
-- [Workshop-3: Miniature Security Static Analysis for Ansible Manifests](./workshop3.html).
+<ul>
+  <li><a href="./workshop2.html">Workshop-2: Forensics in Machine Learning Code</a>.</li>
+  <li><a href="./workshop3.html">Workshop-3: Miniature Security Static Analysis for Ansible Manifests</a>.</li>
+</ul>
 
 <!-- There should be whitespace between paragraphs.
 
@@ -127,3 +123,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ``` -->
+:ET
