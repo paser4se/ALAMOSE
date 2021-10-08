@@ -1,0 +1,26 @@
+I"q<h1 id="mathjax-v3">MathJax v3</h1>
+
+<p>Just the Docs sites can be customised to support <a href="https://www.mathjax.org">MathJax</a>,
+as explained in the <a href="config">configuration suggestions</a>. 
+Pages with <code class="language-plaintext highlighter-rouge">math: mathjax3</code> in the front matter then render \(\mathrm{\LaTeX}\) code in <a href="https://kramdown.gettalong.org/syntax.html#math-blocks">kramdown math blocks</a> using MathJax v3.
+For example:</p>
+
+\[\begin{aligned}
+  &amp; \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  &amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) &amp; \cdots &amp; \phi(e_1, e_n) \\
+      \vdots &amp; \ddots &amp; \vdots \\
+      \phi(e_n, e_1) &amp; \cdots &amp; \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{aligned}\]
+
+<p>To see the \(\mathrm{\LaTeX}\) source of the formula, right-click anywhere on it.</p>
+
+<p>Some <a href="tests">tests</a> illustrate the use of math in Markdown.</p>
+:ET

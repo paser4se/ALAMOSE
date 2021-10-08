@@ -1,0 +1,38 @@
+I"B<h1 id="katex">\(\KaTeX\)</h1>
+
+<p>Just the Docs sites can be customised to support <a href="https://katex.org">\(\KaTeX\)</a>,
+as explained in the <a href="config">configuration suggestions</a>. 
+Pages with <code class="language-plaintext highlighter-rouge">math: katex</code> in the front matter then render \(\LaTeX\) code in <a href="https://kramdown.gettalong.org/syntax.html#math-blocks">kramdown math blocks</a> using \(\KaTeX\).
+For example:</p>
+
+\[\begin{aligned}
+  &amp; \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  &amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) &amp; \cdots &amp; \phi(e_1, e_n) \\
+      \vdots &amp; \ddots &amp; \vdots \\
+      \phi(e_n, e_1) &amp; \cdots &amp; \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{aligned}\]
+
+<p>To see the \(\LaTeX\) source of the formula, select the formula<sup id="fnref:Safari" role="doc-noteref"><a href="#fn:Safari" class="footnote" rel="footnote">1</a></sup> and copy it to the clipboard.</p>
+
+<p>Some <a href="tests">tests</a> illustrate the use of math in Markdown.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:Safari" role="doc-endnote">
+
+      <p>When using Safari, the selection highlighting may include some of the surrounding text,
+but only the formula itself is copied to the clipboard. <a href="#fnref:Safari" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

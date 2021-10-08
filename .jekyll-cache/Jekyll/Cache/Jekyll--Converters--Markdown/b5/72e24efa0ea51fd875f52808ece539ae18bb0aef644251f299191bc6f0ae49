@@ -1,0 +1,32 @@
+I"M<h1 id="mathjax-v2-configuration">MathJax v2 Configuration</h1>
+
+<p>In <code class="language-plaintext highlighter-rouge">_includes/head_custom.html</code> add, for example:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% case page.math %}
+     
+  {% when "mathjax2" %}
+
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/x-mathjax-config"</span><span class="nt">&gt;</span>
+      <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
+        <span class="na">TeX</span><span class="p">:</span> <span class="p">{</span> 
+          <span class="na">equationNumbers</span><span class="p">:</span> <span class="p">{</span> <span class="na">autoNumber</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AMS</span><span class="dl">"</span> <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">});</span>
+    <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">async</span> 
+      <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_SVG"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/script&gt;</span>
+   
+{% endcase %}
+</code></pre></div></div>
+
+<p>See also <a href="https://docs.mathjax.org/en/v2.7-latest/configuration.html">further MathJax v2 configuration options</a>.</p>
+
+<p>In the front matter of pages using MathJax v2 (or as a global front-matter default) add:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">math</span><span class="pi">:</span> <span class="s">mathjax2</span>
+</code></pre></div></div>
+
+<p>The suggested field name <code class="language-plaintext highlighter-rouge">math</code> and the key <code class="language-plaintext highlighter-rouge">mathjax2</code> can be replaced.</p>
+
+:ET

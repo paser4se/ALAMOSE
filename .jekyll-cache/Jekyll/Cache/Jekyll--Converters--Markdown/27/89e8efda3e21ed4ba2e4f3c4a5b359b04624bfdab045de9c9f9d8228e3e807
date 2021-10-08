@@ -1,0 +1,209 @@
+I"L3<h1 class="no_toc" id="tests-for-just-the-docs">Tests for Just the Docs</h1>
+
+<p>Various <a href="docs/">tests</a> illustrate how the theme renders various elements.</p>
+
+<p>The following sections are a log of the creation of this website, with links to some relevant resources.</p>
+
+<p><a href="https://github.com/pdmosses/just-the-docs-tests/issues">Bug reports and suggestions for improvement</a> are welcome!</p>
+
+<details open="">
+  <summary class="text-delta">
+     Table of contents
+   </summary>
+<ul id="markdown-toc">
+  <li><a href="#create-a-jekyll-site-on-github-pages" id="markdown-toc-create-a-jekyll-site-on-github-pages">Create a Jekyll site on GitHub Pages</a></li>
+  <li><a href="#use-just-the-docs-as-a-remote-theme" id="markdown-toc-use-just-the-docs-as-a-remote-theme">Use Just the Docs as a remote theme</a></li>
+  <li><a href="#use-jekyll-actions-on-github-pages-with-jekyll-4" id="markdown-toc-use-jekyll-actions-on-github-pages-with-jekyll-4">Use Jekyll Actions on GitHub Pages with Jekyll 4</a></li>
+</ul>
+
+</details>
+
+<h2 id="create-a-jekyll-site-on-github-pages">Create a Jekyll site on GitHub Pages</h2>
+
+<ol>
+  <li>Shell:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new just-the-docs-tests
+...
+<span class="nb">cd </span>just-the-docs-tests
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li>Browser: <a href="http://localhost:4000">http://localhost:4000</a>
+    <ul>
+      <li>Shows the site home page with <code class="language-plaintext highlighter-rouge">Minima</code> layout</li>
+    </ul>
+  </li>
+  <li>GitHub Desktop:
+    <ul>
+      <li>Create repository <code class="language-plaintext highlighter-rouge">just-the-docs-tests</code></li>
+    </ul>
+  </li>
+  <li>Shell:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config user.email ...@users.noreply.github.com
+</code></pre></div>    </div>
+  </li>
+  <li>GitHub Desktop:
+    <ul>
+      <li>Publish repository <code class="language-plaintext highlighter-rouge">just-the-docs-tests</code></li>
+    </ul>
+  </li>
+  <li>Browser: GitHub repository: Settings:
+    <ul>
+      <li>GitHub Pages: Source: <code class="language-plaintext highlighter-rouge">master</code> or <code class="language-plaintext highlighter-rouge">main</code> (Save)</li>
+      <li>Change repository visibility: <code class="language-plaintext highlighter-rouge">public</code></li>
+    </ul>
+  </li>
+  <li>Browser: <a href="https://pdmosses.github.io/just-the-docs-tests/">https://pdmosses.github.io/just-the-docs-tests/</a>
+    <ul>
+      <li>The site appears on GitHub Pages</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="use-just-the-docs-as-a-remote-theme">Use Just the Docs as a remote theme</h2>
+
+<p><a href="https://pmarsceill.github.io/just-the-docs/#quick-start-use-as-a-github-pages-remote-theme">Just the Docs Quickstart</a></p>
+
+<ol>
+  <li>Edit <code class="language-plaintext highlighter-rouge">_config.yml</code>:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Testing Just the Docs</span>
+<span class="c1"># email: your-email@example.com</span>
+<span class="na">description</span><span class="pi">:</span> <span class="pi">&gt;-</span> <span class="c1"># this means to ignore newlines until "baseurl:"</span>
+  <span class="s">This site tests some features of Just the Docs, a remote theme for Jekyll on GitHub Pages.</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/just-the-docs-tests"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site, e.g. http://example.com</span>
+</code></pre></div>    </div>
+
+    <p>Replace the Minima theme by Just the Docs <a href="https://github.com/benbalter/jekyll-remote-theme">Jekyll remote theme</a>:</p>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Build settings</span>
+<span class="c1"># theme: minima</span>
+<span class="na">remote_theme</span><span class="pi">:</span> <span class="s">pmarsceill/just-the-docs</span>
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span>
+  <span class="pi">-</span> <span class="s">jekyll-remote-theme</span>
+</code></pre></div>    </div>
+
+    <p>Avoid need for <code class="language-plaintext highlighter-rouge">layout: default</code> in <code class="language-plaintext highlighter-rouge">docs</code> pages using <a href="https://jekyllrb.com/docs/configuration/front-matter-defaults/">Jekyll front matter defaults</a>:</p>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span>
+    <span class="na">scope</span><span class="pi">:</span>
+      <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">docs"</span> <span class="c1"># an empty string here means all files in the project</span>
+    <span class="na">values</span><span class="pi">:</span>
+      <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">default"</span>
+</code></pre></div>    </div>
+    <p><strong>Warning:</strong> Using <code class="language-plaintext highlighter-rouge">path: ""</code> above corrupts files in the <code class="language-plaintext highlighter-rouge">assets</code> folder (also when restricted to <code class="language-plaintext highlighter-rouge">type: "pages"</code>).</p>
+  </li>
+  <li>Edit <code class="language-plaintext highlighter-rouge">Gemfile</code>: replace the Minima theme by Just the Docs remote theme
+    <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Happy Jekylling!</span>
+<span class="n">gem</span> <span class="s2">"jekyll"</span><span class="p">,</span> <span class="s2">"~&gt; 4.1.1"</span>
+<span class="c1"># This is the default theme for new Jekyll sites. You may change this to anything you like.</span>
+<span class="c1"># gem "minima", "~&gt; 2.5"</span>
+<span class="n">gem</span> <span class="s2">"jekyll-remote-theme"</span>
+<span class="n">gem</span> <span class="s2">"just-the-docs"</span>
+</code></pre></div>    </div>
+    <p><strong>Warning:</strong> The <code class="language-plaintext highlighter-rouge">github-pages</code> gem currently requires Jekyll 3, and cannot be installed together with Jekyll 4.</p>
+  </li>
+  <li>Files:
+    <ul>
+      <li>delete <code class="language-plaintext highlighter-rouge">about.markdown</code></li>
+      <li>update <code class="language-plaintext highlighter-rouge">index.markdown</code></li>
+      <li>add <code class="language-plaintext highlighter-rouge">README.md</code></li>
+      <li>add <code class="language-plaintext highlighter-rouge">docs/index.md</code></li>
+      <li>add <code class="language-plaintext highlighter-rouge">docs/grandchildren/*</code></li>
+      <li>add <code class="language-plaintext highlighter-rouge">_includes/head_custom.html</code> to <a href="https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests">prevent <code class="language-plaintext highlighter-rouge">favicon.ico</code> requests</a>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link rel="icon" href="data:,"&gt;
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Shell:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install
+</span>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li>Browser: <a href="http://localhost:4000/just-the-docs-tests/">http://localhost:4000/just-the-docs-tests/</a>
+    <ul>
+      <li>Shows the site home page with Just the Docs layout</li>
+    </ul>
+  </li>
+  <li>GitHub Desktop:
+    <ul>
+      <li>Push</li>
+    </ul>
+  </li>
+  <li>Browser: <a href="https://pdmosses.github.io/just-the-docs-tests/">https://pdmosses.github.io/just-the-docs-tests/</a>
+    <ul>
+      <li>The site appears on GitHub Pages</li>
+      <li>The site is automatically built using Jekyll 3.8.5</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="use-jekyll-actions-on-github-pages-with-jekyll-4">Use Jekyll Actions on GitHub Pages with Jekyll 4</h2>
+
+<p><a href="https://jekyllrb.com/docs/continuous-integration/github-actions/">Jekyll Actions</a>, <a href="https://github.com/MichaelCurrin/jekyll-actions-quickstart">Jekyll Actions Demo</a>, <a href="https://sujaykundu.com/blog/post/deploy-jekyll-using-github-pages-and-github-actions#/">Deploy your Jekyll blog using Github Pages and Github Actions</a></p>
+
+<p class="label label-green">Updated April 2021</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">Gemfile</code> is used by the action, so make sure it is <strong>not</strong> in <code class="language-plaintext highlighter-rouge">.gitignore</code>
+(in contrast to <code class="language-plaintext highlighter-rouge">Gemfile.lock</code>, which should be ignored by git).</p>
+
+<p><strong>N.B.</strong> The following steps <strong>overwrite</strong> the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch!</p>
+
+<ol>
+  <li>Browser: GitHub repository: Actions:
+    <ul>
+      <li>Click on the link to <code class="language-plaintext highlighter-rouge">set up a workflow yourself</code></li>
+      <li>Change the file name from <code class="language-plaintext highlighter-rouge">main.yml</code> to <code class="language-plaintext highlighter-rouge">github-pages.yml</code></li>
+      <li>
+        <p>Replace the file contents by the following YAML code from <a href="https://jekyllrb.com/docs/continuous-integration/github-actions/">Jekyll Actions</a></p>
+
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Build and deploy Jekyll site to GitHub Pages</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="s">push</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">github-pages</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+
+    <span class="c1"># Use GitHub Actions' cache to shorten build times and decrease load on servers</span>
+    <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/cache@v2</span>
+      <span class="na">with</span><span class="pi">:</span>
+        <span class="na">path</span><span class="pi">:</span> <span class="s">vendor/bundle</span>
+        <span class="na">key</span><span class="pi">:</span> <span class="s">${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}</span>
+        <span class="na">restore-keys</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">${{ runner.os }}-gems-</span>
+
+    <span class="c1"># Standard usage</span>
+    <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span>  <span class="s">helaili/jekyll-action@v2</span>
+      <span class="na">with</span><span class="pi">:</span>
+        <span class="na">token</span><span class="pi">:</span> <span class="s">${{ secrets.GITHUB_TOKEN }}</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Click <code class="language-plaintext highlighter-rouge">Start commit</code> then <code class="language-plaintext highlighter-rouge">Commit new file</code></li>
+    </ul>
+  </li>
+  <li>Browser: GitHub repository: Settings: Pages:
+    <ul>
+      <li>GitHub Pages: Source: should still be set to <code class="language-plaintext highlighter-rouge">master</code> or <code class="language-plaintext highlighter-rouge">main</code></li>
+    </ul>
+  </li>
+  <li>Browser: GitHub repository:
+    <ul>
+      <li>Click on the status symbol (tick or X) in the latest commit information</li>
+      <li>Click on <code class="language-plaintext highlighter-rouge">Details</code></li>
+      <li>A successful build: <img src="assets/images/workflow-details.png" alt="screenshot" /></li>
+      <li>The site has now been built using <strong>Jekyll 4</strong>, as specified in <code class="language-plaintext highlighter-rouge">Gemfile</code></li>
+    </ul>
+  </li>
+  <li>Browser: <a href="https://pdmosses.github.io/just-the-docs-tests/">https://pdmosses.github.io/just-the-docs-tests/</a>
+    <ul>
+      <li>Check the site has been published on GitHub Pages</li>
+    </ul>
+  </li>
+</ol>
+
+:ET

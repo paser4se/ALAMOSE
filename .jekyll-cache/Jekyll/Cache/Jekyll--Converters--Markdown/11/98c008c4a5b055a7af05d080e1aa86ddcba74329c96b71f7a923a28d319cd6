@@ -1,0 +1,23 @@
+I",<h1 id="grandchildren">Grandchildren</h1>
+
+<p>The children of two pages with the same title (<a href="AC">C</a>, <a href="BC">C</a>) distinguish between their potential parents by specifying their grandparents. The resulting navigation hierarchy has the following structure:</p>
+
+<p><a href="A">A</a></p>
+<ul>
+  <li><a href="AC">C</a>
+    <ul>
+      <li><a href="D">D</a></li>
+      <li><a href="E">E</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="B">B</a></p>
+<ul>
+  <li><a href="BC">C</a>
+    <ul>
+      <li><a href="F">F</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

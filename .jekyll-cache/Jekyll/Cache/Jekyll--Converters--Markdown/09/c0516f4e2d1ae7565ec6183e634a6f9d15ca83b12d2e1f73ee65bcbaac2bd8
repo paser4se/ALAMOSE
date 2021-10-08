@@ -1,0 +1,7 @@
+I"Š<h1 id="c">C</h1>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">C</span>
+<span class="na">parent</span><span class="pi">:</span> <span class="s">B</span>
+<span class="na">has_children</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+:ET

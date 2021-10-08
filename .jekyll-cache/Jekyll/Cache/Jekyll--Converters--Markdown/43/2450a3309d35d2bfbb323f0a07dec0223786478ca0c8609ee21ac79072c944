@@ -1,0 +1,61 @@
+I"r<h1 id="katex-configuration">KaTeX Configuration</h1>
+
+<p>In <code class="language-plaintext highlighter-rouge">_includes/head_custom.html</code> add (for version 0.13.3):</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% case page.math %}
+     
+  {% when "katex" %}
+
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.13/dist/katex.min.css"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- The loading of KaTeX is deferred to speed up page rendering --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">defer</span> <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.13/dist/katex.min.js"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+    <span class="c">&lt;!-- To automatically render math in text elements, include the auto-render extension: --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">defer</span> <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.13/dist/contrib/auto-render.min.js"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span>
+    <span class="na">onload=</span><span class="s">"renderMathInElement(document.body, {
+      globalGroup: true,
+      trust: true,
+      strict: false,
+      throwOnError: false,
+      macros: {
+        '\\\n': '\\ '
+      }
+    });"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+    <span class="c">&lt;!-- Override the KaTeX default of font-size: 1.21em --&gt;</span>
+    <span class="nt">&lt;style&gt;</span>
+      <span class="nc">.katex</span> <span class="p">{</span> 
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span> 
+      <span class="p">}</span>
+    <span class="nt">&lt;/style&gt;</span>
+
+    <span class="c">&lt;!-- Potential workaround for KaTeX 0.13 bug https://github.com/KaTeX/KaTeX/issues/2815 --&gt;</span>
+    <span class="nt">&lt;style&gt;</span>
+      <span class="nc">.katex</span> <span class="nc">.vlist-t2</span> <span class="o">&gt;</span> <span class="nc">.vlist-r</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">2</span><span class="o">)</span> <span class="o">&gt;</span> <span class="nc">.vlist</span> <span class="p">{</span>
+        <span class="nl">pointer-events</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">&lt;/style&gt;</span>
+   
+{% endcase %}
+</code></pre></div></div>
+
+<p>See also <a href="https://katex.org/docs/options.html">further KaTeX configuration options</a>.</p>
+
+<p>In the front matter of pages using KaTeX (or as a global front-matter default) add:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">math</span><span class="pi">:</span> <span class="s">katex</span>
+</code></pre></div></div>
+
+<p>(The suggested field name <code class="language-plaintext highlighter-rouge">math</code> and the key <code class="language-plaintext highlighter-rouge">katex</code> can be replaced.)</p>
+
+<h2 id="preamble">Preamble</h2>
+
+<p>To implement a preamble that defines additional commands for use on all KaTeX pages:</p>
+
+<ul>
+  <li>define a custom layout that includes the command definitions</li>
+  <li>use it on KaTeX pages instead of the default layout.</li>
+</ul>
+
+:ET
