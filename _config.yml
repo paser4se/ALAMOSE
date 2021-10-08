@@ -125,3 +125,7 @@ compress_html:
 theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 markdown: kramdown
+encoding: UTF-8
+
+gems:
+- jekyll-seo-tag
