@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Workshop2
-nav_order: 2
+nav_order: 7
 ---
 
 ## Workshop-2: Forensics in Machine Learning Code

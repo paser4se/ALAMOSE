@@ -1,18 +1,18 @@
-I"¯<h1 class="fs-9" id="secure-software-engineering">Secure Software Engineering</h1>
+I"¿<h1 class="fs-9" id="secure-software-engineering">Secure Software Engineering</h1>
 
 <p class="fs-6 fw-300">Authentic Learning of Secure Software Engineering in DevOps with Hands-on Workshop</p>
 
 <!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 } -->
 
-<!-- - [See configuration options](/securedevops/securedevops/docs/configuration/) -->
+<!-- - [See configuration options](/just-the-docs/just-the-docs/docs/configuration/) -->
 
 <hr />
 
 <h2 id="secure-software-engineering-hands-on-workshop-modules">Secure Software Engineering Hands-on Workshop Modules</h2>
 
 <ul>
-  <li><a href="/securedevops/workshop2/">Workshop-2: Forensics in Machine Learning Code</a></li>
-  <li><a href="/securedevops/workshop3/">Workshop-3: Miniature Security Static Analysis for Ansible Manifests</a></li>
+  <li><a href="/just-the-docs/docs/workshop2/">Workshop-2: Forensics in Machine Learning Code</a></li>
+  <li><a href="/just-the-docs/docs/workshop3/">Workshop-3: Miniature Security Static Analysis for Ansible Manifests</a></li>
 </ul>
 
 <!-- ### Dependencies
@@ -59,7 +59,7 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 
 ### Configure Just the Docs
 
-- [See configuration options](/securedevops/securedevops/docs/configuration/)
+- [See configuration options](/just-the-docs/just-the-docs/docs/configuration/)
 
 ---
 
