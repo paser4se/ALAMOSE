@@ -1,24 +1,20 @@
----
-layout: default
-title: ALAMOSE
-description: Authentic Learning-based Modules for DevOps Security Education.  
----
-
-ALAMOSE aims to educate undergraduate and graduate students on (i) what categories of security weaknesses
-appear for artifacts used in DevOps, and (ii) how identified security weaknesses can be detected. 
+I"z<p>ALAMOSE aims to educate undergraduate and graduate students on (i) what categories of security weaknesses
+appear for artifacts used in DevOps, and (ii) how identified security weaknesses can be detected.</p>
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
-- [Module 1: Security Weaknesses in Infrastructure as Code Scripts](./Module-1.html)
-- [Module 2: Coming soon](./Module-2.html)
-- [Module 3: Coming soon](./Module-3.html)
-- [Module 4: Coming soon](./Module-4.html)
-- [Module 5: Coming soon](./Module-5.html)
-- [Module 6: Coming soon](./Module-6.html)
-- [Module 7: Coming soon](./Module-7.html)
-- [Module 8: Coming soon](./Module-8.html)
-- [Module 9: Coming soon](./Module-9.html)
-- [Module 10: Coming soon](./Module-10.html)
+<ul>
+  <li><a href="./Module-1.html">Module 1: Security Weaknesses in Infrastructure as Code Scripts</a>.</li>
+  <li><a href="./Module-2.html">Module 2: Coming soon</a>.</li>
+  <li><a href="./Module-3.html">Module 3: Coming soon</a>.</li>
+  <li><a href="./Module-4.html">Module 4: Coming soon</a>.</li>
+  <li><a href="./Module-5.html">Module 5: Coming soon</a>.</li>
+  <li><a href="./Module-6.html">Module 6: Coming soon</a>.</li>
+  <li><a href="./Module-7.html">Module 7: Coming soon</a>.</li>
+  <li><a href="./Module-8.html">Module 8: Coming soon</a>.</li>
+  <li><a href="./Module-9.html">Module 9: Coming soon</a>.</li>
+  <li><a href="./Module-10.html">Module 10: Coming soon</a>.</li>
+</ul>
 
 <!-- There should be whitespace between paragraphs.
 
@@ -135,3 +131,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ``` -->
+:ET
