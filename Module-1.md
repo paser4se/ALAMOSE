@@ -20,7 +20,7 @@ description: Security Weaknesses in Infrastructure as Code Scripts
 <!-- {: .no_toc } -->
 
 
-Identifying security weaknesses, such as hard-coded passwords in Ansible scripts, which is used to implement the practice of IaC.
+Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.
 {: .fs-6 .fw-300 }
 
 ## Learning Objectives
@@ -40,23 +40,23 @@ Secure Software Development, Software and Systems Ssecurity, Software Engineerin
 
 ### Pre-Lab Concept Dissemination
 
-Introduction to Ansible scripts, and how Ansible scripts can be parsed using pyyaml.
+Introduction to SaltStack scripts, and how SaltStack scripts can be parsed using pyyaml.
 
-<!-- - Introduction to `Ansible` scripts and how Ansible scripts can be parsed using `pyyaml`
-- Demonstration of security weaknesses such as hard-coded passwords can exist in `Ansible` scripts.
-- Discussion on concepts of information flow in an Ansible scripts and how it can be used to detect security weaknesses in `Ansible` script. -->
+<!-- - Introduction to `SaltStack` scripts and how SaltStack scripts can be parsed using `pyyaml`
+- Demonstration of security weaknesses such as hard-coded passwords can exist in `SaltStack` scripts.
+- Discussion on concepts of information flow in an SaltStack scripts and how it can be used to detect security weaknesses in `SaltStack` script. -->
 
 ### Hands-on Activity
 
-Identify an instance of a security weakness in Ansible scripts.
+Identify an instance of a security weakness in SaltStack scripts.
 
 <!-- 
-- Finding out security weakness in Ansible scripts from provided directory of Ansible scripts.
-- Reporting how the security weakness are propagated to other Ansible scripts.   -->
+- Finding out security weakness in SaltStack scripts from provided directory of SaltStack scripts.
+- Reporting how the security weakness are propagated to other SaltStack scripts.   -->
 
 ### Post-Lab Activities
 
-Identify more instances of security weaknesses in the Ansible scrips by reading existing [research](https://akondrahman.github.io/publications/)
+Identify more instances of security weaknesses in the SaltStack scrips by reading existing [research](https://akondrahman.github.io/publications/)
 
 <!-- 
 - Providing feedback to students by commenting on their code.
