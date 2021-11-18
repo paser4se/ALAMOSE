@@ -1,11 +1,9 @@
-I"ú<h2 id="what-is-security-weakness">What is Security Weakness?</h2>
+I"‰<p><a href="./"><strong>Return Home</strong></a></p>
+
+<h2 id="description">Description</h2>
 <!-- {: .no_toc } -->
 
-<p>A security weakness is an error, flaw such as insecure coding pattern that can lead to vulnerability.</p>
-
-<p><img src="/assets/sw-example.png" alt="" /></p>
-
-<!-- {: .fs-6 .fw-300 } -->
+<p>Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.</p>
 
 <h2 id="learning-objectives">Learning Objectives</h2>
 <p>Upon completion of this module, the student will be able to</p>
@@ -20,6 +18,13 @@
 <p>Secure Software Development, Software and Systems Ssecurity, Software Engineering</p>
 
 <!-- View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example. -->
+
+<h2 id="activities">Activities</h2>
+<p><a href="./Module-7-Prelab.html">Pre-Lab Concept Dissemination</a></p>
+
+<p><a href="./Module-7-hands-on.html">Hands-on Activity</a></p>
+
+<p><a href="./Module-7-Postlab.html">Post-Lab Activity</a></p>
 
 <!-- ### [Pre-Lab Concept Dissemination]
 
@@ -44,8 +49,6 @@ Identify more instances of security weaknesses in the SaltStack scrips by readin
 <!--
 - Providing feedback to students by commenting on their code.
 - Describing the students how far off their solution from the solution. -->
-
-<p><a href="./Module-7.html"><strong>Return Module 7</strong></a></p>
 
 <p><a href="./"><strong>Return Home</strong></a></p>
 :ET

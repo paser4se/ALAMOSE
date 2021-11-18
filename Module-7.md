@@ -6,14 +6,11 @@ description: Security Weaknesses in Infrastructure as Code Scripts
 
 [**Return Home**](./)
 
-
-
 ## Description
 <!-- {: .no_toc } -->
 
 
 Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.
-{: .fs-6 .fw-300 }
 
 ## Learning Objectives
 Upon completion of this module, the student will be able to
@@ -26,7 +23,6 @@ Upon completion of this module, the student will be able to
 Secure Software Development, Software and Systems Ssecurity, Software Engineering
 
 <!-- View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example. -->
-
 
 ## Activities
 [Pre-Lab Concept Dissemination](./Module-7-Prelab.html)
