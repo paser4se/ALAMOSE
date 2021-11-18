@@ -1,39 +1,34 @@
 ---
 layout: default
-title: Module 7
-description: Security Weaknesses in Infrastructure as Code Scripts
+title: Pre-Lab
+description: In this Pre-Lab activity, we disseminated concepts such as security weakness, flow analysis with examples to give the students a background on security weaknesses in SaltStack scripts.
+
 ---
 
-[**Return Home**](./)
 
-
-
-## Description
+## Security Weakness
 <!-- {: .no_toc } -->
 
+A security weakness is an error, flaw such as insecure coding pattern that can lead to vulnerability. In the following example, we show an example of security weakness, suspicious comment in source code.
 
-Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.
-{: .fs-6 .fw-300 }
+![](/assets/sw-example.png)
 
-## Learning Objectives
-Upon completion of this module, the student will be able to
+<!-- {: .fs-6 .fw-300 } -->
 
-- Understand security weaknesses.
-- Understand the flow of information to detect security weaknesses accurately.
+## Flow Analysis
 
+A security weakness such as hard-coded secret can be propagated to other part of the program. A flow analysis is a process to identify how security weakenss such as insecure coding pattern in a program can propagate security weakness with in a software system. In the following example, we demonstrate how information can propagate to different parts of the program.
+
+![](/assets/flow.png)
+
+<!--
 ## Targeted courses
 
-Secure Software Development, Software and Systems Ssecurity, Software Engineering
+Secure Software Development, Software and Systems Ssecurity, Software Engineering -->
 
 <!-- View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example. -->
 
 
-## Activities
-[Pre-Lab Concept Dissemination](./Module-7-Prelab.html)
-
-[Hands-on Activity](./Module-7-hands-on.html)
-
-[Post-Lab Activity](./Module-7-Postlab.html)
 
 <!-- ### [Pre-Lab Concept Dissemination]
 
@@ -58,5 +53,13 @@ Identify more instances of security weaknesses in the SaltStack scrips by readin
 <!--
 - Providing feedback to students by commenting on their code.
 - Describing the students how far off their solution from the solution. -->
+
+
+
+[Go M7 Hands-on](./Module-7-hands-on.html)
+
+[Go M7 Post-Lab](./Module-7-Postlab.html)
+
+[**GO M7 Home**](./Module-7.html)
 
 [**Return Home**](./)

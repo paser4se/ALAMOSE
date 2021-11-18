@@ -1,0 +1,18 @@
+I"É<h2 id="security-weakness-in-saltstack-scripts">Security Weakness in SaltStack scripts</h2>
+<p>In the following SaltStack code snippet we have highlighted an example of security weakness, suspicious comment. Suspicious comments often reveal edge cases, missing functionality of the source code that can make source code vulnerable to attack.</p>
+
+<p><img src="/assets/comment.png" alt="" /></p>
+
+<h2 id="steps-of-identifying-the-suspicious-comment-in-saltstack-scripts">Steps of identifying the suspicious comment in SaltStack scripts</h2>
+<p>According to CWE database, use of specific key-words such as <code class="language-plaintext highlighter-rouge">hack</code> , <code class="language-plaintext highlighter-rouge">fixme</code>, <code class="language-plaintext highlighter-rouge">todo</code>, <code class="language-plaintext highlighter-rouge">bug</code>, <code class="language-plaintext highlighter-rouge">later</code>, <code class="language-plaintext highlighter-rouge">bug</code> in comments can reveal missing security functionality, presence of bugs (CWE-546). In the following figure, we demonstrated steps for automatically identifying suspicious comment in SaltStack scripts.</p>
+
+<p><img src="/assets/steps.png" alt="" /></p>
+
+<p><a href="./Module-7.html"><strong>Go M7 Home</strong></a></p>
+
+<p><a href="./Module-7-Prelab.html">Go M7 Pre-Lab</a></p>
+
+<p><a href="./Module-7-hands-on.html">Go M7 Hands-on</a></p>
+
+<p><a href="./"><strong>Return Home</strong></a></p>
+:ET

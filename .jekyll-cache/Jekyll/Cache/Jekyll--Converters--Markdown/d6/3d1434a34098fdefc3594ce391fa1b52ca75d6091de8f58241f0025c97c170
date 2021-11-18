@@ -1,39 +1,30 @@
----
-layout: default
-title: Module 7
-description: Security Weaknesses in Infrastructure as Code Scripts
----
+I"ù<p><a href="./"><strong>Return Home</strong></a></p>
 
-[**Return Home**](./)
-
-
-
-## Description
+<h2 id="description">Description</h2>
 <!-- {: .no_toc } -->
 
+<p class="fs-6 fw-300">Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.</p>
 
-Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.
-{: .fs-6 .fw-300 }
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>Upon completion of this module, the student will be able to</p>
 
-## Learning Objectives
-Upon completion of this module, the student will be able to
+<ul>
+  <li>Understand security weaknesses.</li>
+  <li>Understand the flow of information to detect security weaknesses accurately.</li>
+</ul>
 
-- Understand security weaknesses.
-- Understand the flow of information to detect security weaknesses accurately.
+<h2 id="targeted-courses">Targeted courses</h2>
 
-## Targeted courses
-
-Secure Software Development, Software and Systems Ssecurity, Software Engineering
+<p>Secure Software Development, Software and Systems Ssecurity, Software Engineering</p>
 
 <!-- View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example. -->
 
+<h2 id="activities">Activities</h2>
+<p><a href="./Module-7-Prelab.html">Pre-Lab Concept Dissemination</a></p>
 
-## Activities
-[Pre-Lab Concept Dissemination](./Module-7-Prelab.html)
+<p><a href="./Module-7-hands-on.html">Hands-on Activity</a></p>
 
-[Hands-on Activity](./Module-7-hands-on.html)
-
-[Post-Lab Activity](./Module-7-Postlab.html)
+<p><a href="./Module-7-Postlab.html">Post-Lab Activity</a></p>
 
 <!-- ### [Pre-Lab Concept Dissemination]
 
@@ -59,4 +50,5 @@ Identify more instances of security weaknesses in the SaltStack scrips by readin
 - Providing feedback to students by commenting on their code.
 - Describing the students how far off their solution from the solution. -->
 
-[**Return Home**](./)
+<p><a href="./"><strong>Return Home</strong></a></p>
+:ET

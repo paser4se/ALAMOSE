@@ -1,39 +1,24 @@
----
-layout: default
-title: Module 7
-description: Security Weaknesses in Infrastructure as Code Scripts
----
-
-[**Return Home**](./)
-
-
-
-## Description
+I"ò<h2 id="what-is-security-weakness">What is Security Weakness?</h2>
 <!-- {: .no_toc } -->
 
+<p>A security weakness is an error, flaw such as insecure coding pattern that can lead to vulnerability.
+<img src="/assets/sw-example.jpg" alt="" /></p>
 
-Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.
-{: .fs-6 .fw-300 }
+<!-- {: .fs-6 .fw-300 } -->
 
-## Learning Objectives
-Upon completion of this module, the student will be able to
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>Upon completion of this module, the student will be able to</p>
 
-- Understand security weaknesses.
-- Understand the flow of information to detect security weaknesses accurately.
+<ul>
+  <li>Understand security weaknesses.</li>
+  <li>Understand the flow of information to detect security weaknesses accurately.</li>
+</ul>
 
-## Targeted courses
+<h2 id="targeted-courses">Targeted courses</h2>
 
-Secure Software Development, Software and Systems Ssecurity, Software Engineering
+<p>Secure Software Development, Software and Systems Ssecurity, Software Engineering</p>
 
 <!-- View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example. -->
-
-
-## Activities
-[Pre-Lab Concept Dissemination](./Module-7-Prelab.html)
-
-[Hands-on Activity](./Module-7-hands-on.html)
-
-[Post-Lab Activity](./Module-7-Postlab.html)
 
 <!-- ### [Pre-Lab Concept Dissemination]
 
@@ -59,4 +44,7 @@ Identify more instances of security weaknesses in the SaltStack scrips by readin
 - Providing feedback to students by commenting on their code.
 - Describing the students how far off their solution from the solution. -->
 
-[**Return Home**](./)
+<p><a href="./Module-7.html"><strong>Return Module 7</strong></a></p>
+
+<p><a href="./"><strong>Return Home</strong></a></p>
+:ET

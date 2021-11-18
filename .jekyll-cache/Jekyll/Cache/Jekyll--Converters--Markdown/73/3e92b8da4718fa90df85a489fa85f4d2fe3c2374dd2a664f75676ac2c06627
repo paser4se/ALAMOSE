@@ -1,0 +1,70 @@
+I"0
+<ol id="markdown-toc">
+  <li><a href="#description" id="markdown-toc-description">Description</a></li>
+  <li><a href="#learning-objectives" id="markdown-toc-learning-objectives">Learning Objectives</a></li>
+  <li><a href="#targeted-courses" id="markdown-toc-targeted-courses">Targeted courses</a></li>
+  <li><a href="#activities" id="markdown-toc-activities">Activities</a>    <ol>
+      <li><a href="#pre-lab-concept-dissemination" id="markdown-toc-pre-lab-concept-dissemination">Pre-Lab Concept Dissemination</a></li>
+      <li><a href="#hands-on-activity" id="markdown-toc-hands-on-activity">Hands-on Activity</a></li>
+      <li><a href="#post-lab-activity" id="markdown-toc-post-lab-activity">Post-Lab Activity</a></li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="description">Description</h2>
+<!-- {: .no_toc } -->
+
+<p class="fs-6 fw-300">Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.</p>
+
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>Upon completion of this module, the student will be able to</p>
+
+<ul>
+  <li>Understand security weaknesses.</li>
+  <li>Understand the flow of information to detect security weaknesses accurately.</li>
+</ul>
+
+<h2 id="targeted-courses">Targeted courses</h2>
+
+<p>Secure Software Development, Software and Systems Ssecurity, Software Engineering</p>
+
+<!-- View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example. -->
+
+<h2 id="activities">Activities</h2>
+
+<h3 id="pre-lab-concept-dissemination"><a href="./Module-7-Prelab.html">Pre-Lab Concept Dissemination</a></h3>
+<h3 id="hands-on-activity"><a href="./Module-7-hands-on.html">Hands-on Activity</a></h3>
+<h3 id="post-lab-activity"><a href="./Module-7-Postlab.html">Post-Lab Activity</a></h3>
+
+<!-- ### [Pre-Lab Concept Dissemination]
+
+Introduction to SaltStack scripts, and how SaltStack scripts can be parsed using pyyaml. -->
+
+<!-- - Introduction to `SaltStack` scripts and how SaltStack scripts can be parsed using `pyyaml`
+- Demonstration of security weaknesses such as hard-coded passwords can exist in `SaltStack` scripts.
+- Discussion on concepts of information flow in an SaltStack scripts and how it can be used to detect security weaknesses in `SaltStack` script. -->
+
+<!-- ### Hands-on Activity
+
+Identify an instance of a security weakness in SaltStack scripts. -->
+
+<!--
+- Finding out security weakness in SaltStack scripts from provided directory of SaltStack scripts.
+- Reporting how the security weakness are propagated to other SaltStack scripts.   -->
+
+<!-- ### Post-Lab Activities
+
+Identify more instances of security weaknesses in the SaltStack scrips by reading existing [research](https://akondrahman.github.io/publications/) -->
+
+<!--
+- Providing feedback to students by commenting on their code.
+- Describing the students how far off their solution from the solution. -->
+
+<p><a href="./"><strong>Return Home</strong></a></p>
+
+<p><a href="./Module-7.html"><strong>Return Module 7</strong></a></p>
+
+<p><a href="./"><strong>Return Home</strong></a></p>
+:ET

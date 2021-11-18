@@ -1,4 +1,4 @@
-I"g<p><a href="./"><strong>Return Home</strong></a></p>
+I"5<p><a href="./"><strong>Return Home</strong></a></p>
 
 <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
@@ -9,7 +9,7 @@
   <li><a href="#activities" id="markdown-toc-activities">Activities</a>    <ol>
       <li><a href="#pre-lab-concept-dissemination" id="markdown-toc-pre-lab-concept-dissemination">Pre-Lab Concept Dissemination</a></li>
       <li><a href="#hands-on-activity" id="markdown-toc-hands-on-activity">Hands-on Activity</a></li>
-      <li><a href="#post-lab-activities" id="markdown-toc-post-lab-activities">Post-Lab Activities</a></li>
+      <li><a href="#post-lab-activity" id="markdown-toc-post-lab-activity">Post-Lab Activity</a></li>
     </ol>
   </li>
 </ol>
@@ -19,7 +19,7 @@
 <h2 id="description">Description</h2>
 <!-- {: .no_toc } -->
 
-<p class="fs-6 fw-300">Identifying security weaknesses, such as hard-coded passwords in Ansible scripts, which is used to implement the practice of IaC.</p>
+<p class="fs-6 fw-300">Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.</p>
 
 <h2 id="learning-objectives">Learning Objectives</h2>
 <p>Upon completion of this module, the student will be able to</p>
@@ -37,27 +37,31 @@
 
 <h2 id="activities">Activities</h2>
 
-<h3 id="pre-lab-concept-dissemination">Pre-Lab Concept Dissemination</h3>
+<h3 id="pre-lab-concept-dissemination"><a href="./Module-7-Prelab.html">Pre-Lab Concept Dissemination</a></h3>
+<h3 id="hands-on-activity"><a href="./Module-7-hands-on.html">Hands-on Activity</a></h3>
+<h3 id="post-lab-activity"><a href="./Module-7-Postlab.html">Post-Lab Activity</a></h3>
 
-<p>Introduction to Ansible scripts, and how Ansible scripts can be parsed using pyyaml.</p>
+<!-- ### [Pre-Lab Concept Dissemination]
 
-<!-- - Introduction to `Ansible` scripts and how Ansible scripts can be parsed using `pyyaml`
-- Demonstration of security weaknesses such as hard-coded passwords can exist in `Ansible` scripts.
-- Discussion on concepts of information flow in an Ansible scripts and how it can be used to detect security weaknesses in `Ansible` script. -->
+Introduction to SaltStack scripts, and how SaltStack scripts can be parsed using pyyaml. -->
 
-<h3 id="hands-on-activity">Hands-on Activity</h3>
+<!-- - Introduction to `SaltStack` scripts and how SaltStack scripts can be parsed using `pyyaml`
+- Demonstration of security weaknesses such as hard-coded passwords can exist in `SaltStack` scripts.
+- Discussion on concepts of information flow in an SaltStack scripts and how it can be used to detect security weaknesses in `SaltStack` script. -->
 
-<p>Identify an instance of a security weakness in Ansible scripts.</p>
+<!-- ### Hands-on Activity
 
-<!-- 
-- Finding out security weakness in Ansible scripts from provided directory of Ansible scripts.
-- Reporting how the security weakness are propagated to other Ansible scripts.   -->
+Identify an instance of a security weakness in SaltStack scripts. -->
 
-<h3 id="post-lab-activities">Post-Lab Activities</h3>
+<!--
+- Finding out security weakness in SaltStack scripts from provided directory of SaltStack scripts.
+- Reporting how the security weakness are propagated to other SaltStack scripts.   -->
 
-<p>Identify more instances of security weaknesses in the Ansible scrips by reading existing <a href="https://akondrahman.github.io/publications/">research</a></p>
+<!-- ### Post-Lab Activities
 
-<!-- 
+Identify more instances of security weaknesses in the SaltStack scrips by reading existing [research](https://akondrahman.github.io/publications/) -->
+
+<!--
 - Providing feedback to students by commenting on their code.
 - Describing the students how far off their solution from the solution. -->
 

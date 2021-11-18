@@ -5,20 +5,20 @@ description: Authentic Learning-based Modules for DevOps Security Education.
 ---
 
 ALAMOSE aims to educate undergraduate and graduate students on (i) what categories of security weaknesses
-appear for artifacts used in DevOps, and (ii) how identified security weaknesses can be detected. 
+appear for artifacts used in DevOps, and (ii) how identified security weaknesses can be detected.
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
-- [Module 1: Security Weaknesses in Infrastructure as Code Scripts](./Module-1.html)
-- [Module 2: Coming soon](./Module-2.html)
-- [Module 3: Coming soon](./Module-3.html)
-- [Module 4: Coming soon](./Module-4.html)
-- [Module 5: Coming soon](./Module-5.html)
-- [Module 6: Coming soon](./Module-6.html)
-- [Module 7: Coming soon](./Module-7.html)
-- [Module 8: Coming soon](./Module-8.html)
-- [Module 9: Coming soon](./Module-9.html)
-- [Module 10: Coming soon](./Module-10.html)
+- [M1: Coming soon](./Module-1.html)
+- [M2: Coming soon](./Module-2.html)
+- [M3: Coming soon](./Module-3.html)
+- [M4: Coming soon](./Module-4.html)
+- [M5: Coming soon](./Module-5.html)
+- [M6: Coming soon](./Module-6.html)
+- [M7: Security Weaknesses in Infrastructure as Code Scripts](./Module-7.html)
+- [M8: Coming soon](./Module-8.html)
+- [M9: Coming soon](./Module-9.html)
+- [M10: Coming soon](./Module-10.html)
 
 <!-- There should be whitespace between paragraphs.
 
