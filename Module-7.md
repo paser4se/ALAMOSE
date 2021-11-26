@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Module 7
+title: Module 7 
 description: Security Weaknesses in Infrastructure as Code Scripts
 ---
 

@@ -1,10 +1,13 @@
 ---
 layout: default
-title: Git Hooks to Facilitate Automated Security Static Analysis
-description: Under Construction
+title: Module 5
+description: Git Hooks to Facilitate Automated Security Static Analysis
 ---
 
 
+## Description
+
+Under Construction
 
 ## Learning Objectives
 Upon completion of this module, the student will be able to

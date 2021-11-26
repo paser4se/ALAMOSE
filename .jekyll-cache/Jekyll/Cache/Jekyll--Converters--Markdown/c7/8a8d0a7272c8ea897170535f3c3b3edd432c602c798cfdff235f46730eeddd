@@ -1,5 +1,4 @@
-I"0<h2 id="description">Description</h2>
-<!-- {: .no_toc } -->
+I"6<h2 id="description">Description</h2>
 
 <p>Under Construction</p>
 
@@ -7,8 +6,9 @@
 <p>Upon completion of this module, the student will be able to</p>
 
 <ul>
-  <li>explain how security requirements get translated to source code</li>
-  <li>identify requirements that are related to software security</li>
+  <li>describe the best practices for security-focused logging</li>
+  <li>apply source code instrumentation to automate logging</li>
+  <li>analyze security logging data</li>
 </ul>
 
 <h2 id="targeted-courses">Targeted courses</h2>

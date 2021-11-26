@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Automated Secret Management
-description: Under Construction
+title: Module 10
+description: Automated Secret Management
 ---
 
+## Description
 
+Under Construction
 
 ## Learning Objectives
 Upon completion of this module, the student will be able to

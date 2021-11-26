@@ -1,9 +1,12 @@
 ---
 layout: default
-title: Chaos Engineering
-description: Under Construction
+title: Module 9
+description: Chaos Engineering
 ---
 
+## Description
+
+Under Construction
 
 
 ## Learning Objectives

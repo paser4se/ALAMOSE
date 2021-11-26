@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Automated Detection of Known Security Weaknesses
-description: Under Construction
+title: Module 2 
+description: Automated Detection of Known Security Weaknesses
 ---
 
 

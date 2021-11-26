@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Automated Requirements Validation
-description: Under Construction
+title: Module 1
+description: Automated Requirements Validation
 ---
 
+## Description
 
+Under Construction
 
 ## Learning Objectives
 Upon completion of this module, the student will be able to

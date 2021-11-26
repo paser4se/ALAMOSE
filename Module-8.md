@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Security Weaknesses in Kubernetes Manifests
-description: Under Construction
+title: Module 8
+description: Security Weaknesses in Kubernetes Manifests
 ---
 
+## Description
 
+Under Construction
 
 ## Learning Objectives
 Upon completion of this module, the student will be able to

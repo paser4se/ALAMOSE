@@ -1,0 +1,19 @@
+I":<h2 id="description">Description</h2>
+
+<p>Under Construction</p>
+
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>Upon completion of this module, the student will be able to</p>
+
+<ul>
+  <li>explain Kubernetes security weakness</li>
+  <li>apply static analysis to detect security issues for Kubernetes</li>
+  <li>fix identified security issues in Kubernetes</li>
+</ul>
+
+<h2 id="targeted-courses">Targeted courses</h2>
+
+<p>Secure Software Development, Software and Systems Ssecurity, Software Engineering</p>
+
+<p><a href="./"><strong>Return Home</strong></a></p>
+:ET
