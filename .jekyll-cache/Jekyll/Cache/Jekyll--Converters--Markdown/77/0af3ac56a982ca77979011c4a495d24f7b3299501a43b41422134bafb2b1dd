@@ -1,24 +1,20 @@
----
-layout: default
-title: ALAMOSE
-description: Authentic Learning-based Modules for DevOps Security Education.  
----
-
-ALAMOSE aims to educate undergraduate and graduate students on (i) what categories of security weaknesses
-appear for artifacts used in DevOps, and (ii) how identified security weaknesses can be detected.
+I"2<p>ALAMOSE aims to educate undergraduate and graduate students on (i) what categories of security weaknesses
+appear for artifacts used in DevOps, and (ii) how identified security weaknesses can be detected.</p>
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
-- [M1: Automated Requirements Validation](./Module-1.html)
-- [M2: Automated Detection of Known Security Weaknesses](./Module-2.html)
-- [M3: Automated Taint Tracking for Accurate Detection](./Module-3.html)
-- [M4: Automated Forensicability](./Module-4.html)
-- [M5: Git Hooks to Facilitate Automated Security Static Analysis](./Module-5.html)
-- [M6: Security Weaknesses in Continuous Integration Artifacts](./Module-6.html)
-- [M7: Security Weaknesses in Infrastructure as Code Scripts](./Module-7.html)
-- [M8: Security Weaknesses in Kubernetes Manifests](./Module-8.html)
-- [M9: Chaos Engineering](./Module-9.html)
-- [M10: Automated Secret Management](./Module-10.html)
+<ul>
+  <li><a href="./Module-1.html">M1: Automated Requirements Validation</a></li>
+  <li><a href="./Module-2.html">M2: Automated Detection of Known Security Weaknesses</a></li>
+  <li><a href="./Module-3.html">M3: Automated Taint Tracking for Accurate Detection</a></li>
+  <li><a href="./Module-4.html">M4: Automated Forensicability</a></li>
+  <li><a href="./Module-5.html">M5: Git Hooks to Facilitate Automated Security Static Analysis</a></li>
+  <li><a href="./Module-6.html">M6: Security Weaknesses in Continuous Integration Artifacts</a></li>
+  <li><a href="./Module-7.html">M7: Security Weaknesses in Infrastructure as Code Scripts</a></li>
+  <li><a href="./Module-8.html">M8: Security Weaknesses in Kubernetes Manifests</a></li>
+  <li><a href="./Module-9.html">M9: Chaos Engineering</a></li>
+  <li><a href="./Module-10.html">M10: Automated Secret Management</a></li>
+</ul>
 
 <!-- There should be whitespace between paragraphs.
 
@@ -135,3 +131,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ``` -->
+:ET

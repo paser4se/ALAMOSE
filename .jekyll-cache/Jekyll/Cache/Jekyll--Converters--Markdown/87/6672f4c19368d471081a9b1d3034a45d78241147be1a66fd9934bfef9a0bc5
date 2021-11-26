@@ -1,16 +1,17 @@
-I"ù<p><a href="./"><strong>Return Home</strong></a></p>
+I"ÿ<p><a href="./"><strong>Return Home</strong></a></p>
 
 <h2 id="description">Description</h2>
 <!-- {: .no_toc } -->
 
-<p class="fs-6 fw-300">Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.</p>
+<p>Identifying security weaknesses, such as hard-coded passwords in SaltStack scripts, which is used to implement the practice of IaC.</p>
 
 <h2 id="learning-objectives">Learning Objectives</h2>
 <p>Upon completion of this module, the student will be able to</p>
 
 <ul>
-  <li>Understand security weaknesses.</li>
-  <li>Understand the flow of information to detect security weaknesses accurately.</li>
+  <li>explain security weakness in IaC scripts</li>
+  <li>apply static analysis to detect security issues commonly in IaC scripts</li>
+  <li>extend available tools to detect security issues in IaC scripts</li>
 </ul>
 
 <h2 id="targeted-courses">Targeted courses</h2>

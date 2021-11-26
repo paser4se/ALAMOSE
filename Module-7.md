@@ -15,8 +15,9 @@ Identifying security weaknesses, such as hard-coded passwords in SaltStack scrip
 ## Learning Objectives
 Upon completion of this module, the student will be able to
 
-- Understand security weaknesses.
-- Understand the flow of information to detect security weaknesses accurately.
+- explain security weakness in IaC scripts
+- apply static analysis to detect security issues commonly in IaC scripts
+- extend available tools to detect security issues in IaC scripts 
 
 ## Targeted courses
 
